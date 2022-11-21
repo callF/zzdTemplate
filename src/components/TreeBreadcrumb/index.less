@@ -1,0 +1,54 @@
+.g-treeBreadcrumb {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 24px;
+  padding: 0 16px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-size: 0;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: 4px;
+    height: 24px;
+    content: '';
+    background: #154ad8;
+  }
+
+  .m-item {
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle;
+
+    &:first-child {
+      padding-left: 16px;
+    }
+    &.f-last {
+      margin-right: 0;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+
+      .u-name {
+        max-width: 300px;
+      }
+    }
+
+    .u-name {
+      display: inline-block;
+      max-width: 54px;
+      margin-right: 2px;
+      font-size: 16px;
+      line-height: 24px;
+      color: #303133;
+      vertical-align: middle;
+    }
+
+    .u-icon {
+      display: inline-block;
+      font-size: 16px;
+      vertical-align: middle;
+    }
+  }
+}

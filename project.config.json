@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./dist",
+  "projectname": "icApp",
+  "description": "浙里资产",
+  "appid": "wx59134b7156077f4d",
+  "setting": {
+    "es6": false,
+    "postcss": false,
+    "minified": false,
+    "urlCheck": false
+  },
+  "compileType": "miniprogram"
+}

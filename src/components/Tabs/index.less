@@ -1,0 +1,41 @@
+.g-tabs {
+  width: 100%;
+  text-align: center;
+  .m-tab {
+    display: inline-block;
+    width: 120px;
+    height: 42px;
+    vertical-align: middle;
+    opacity: 0.4;
+
+    &.f-active {
+      position: relative;
+      opacity: 1;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 9px;
+        height: 4px;
+        content: '';
+        background: #fff;
+        border-radius: 2px;
+        transform: translate(-50%, 0);
+      }
+    }
+
+    .u-text {
+      width: auto;
+      height: 24px;
+      padding-top: 11px;
+      margin: 0 auto;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}

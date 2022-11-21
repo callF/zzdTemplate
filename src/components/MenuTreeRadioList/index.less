@@ -1,0 +1,75 @@
+.g-menuTreeRadioList {
+  display: flex;
+  font-family: PingFangSC-Regular, PingFang SC;
+
+  .m-left-l {
+    display: inline-block;
+    flex: 0 0 111px;
+    margin-right: 2px;
+    overflow: auto;
+    vertical-align: top;
+    background: #ebeef5;
+    .m-menu {
+      box-sizing: border-box;
+      width: 111px;
+      height: 44px;
+      padding: 0 10px;
+      font-size: 12px;
+      line-height: 44px;
+      color: #303133;
+      text-align: center;
+
+      &.f-active {
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #154ad8;
+        background: #fff;
+      }
+    }
+  }
+
+  .m-right-ml {
+    display: inline-block;
+    flex: 1;
+    margin-right: 2px;
+    overflow: auto;
+    vertical-align: top;
+    background: #fff;
+    .m-menu {
+      height: 44px;
+      font-size: 12px;
+      line-height: 44px;
+      color: #303133;
+      text-align: center;
+
+      &.f-active {
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #154ad8;
+        background: #fff;
+      }
+    }
+  }
+
+  .m-right-l {
+    display: inline-block;
+    flex: 1;
+    overflow: auto;
+    vertical-align: top;
+    background-color: #fff;
+
+    .g-radioList {
+      .m-radio {
+        height: 44px;
+        padding: 12px 0;
+        border-bottom: none;
+        .m-label {
+          .u-name {
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}

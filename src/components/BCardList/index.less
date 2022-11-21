@@ -1,0 +1,225 @@
+.g-bCardList {
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-size: 0;
+  .m-scroll-c {
+    box-sizing: border-box;
+    height: calc(100vh - 109px);
+    padding-top: 4px;
+
+    .m-card {
+      position: relative;
+      box-sizing: border-box;
+      width: 343px;
+      height: 91px;
+      padding: 7px 12px 0 16px;
+      margin: 0 16px 16px 16px;
+      margin-top: 8px;
+      background: url('https://szzw001.oss-cn-hangzhou.aliyuncs.com/assetControl/app/card-bg.png')
+        no-repeat top left;
+      background-color: #fff;
+      background-size: 100% 62px;
+      border-radius: 8px;
+
+      &.f-showDel {
+        .g-del {
+          display: block;
+        }
+      }
+
+      .u-hide-input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 11;
+        width: 100%;
+        height: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        opacity: 0.3;
+      }
+
+      .g-del {
+        position: absolute;
+        display: none;
+        width: 100%;
+        height: 100%;
+
+        .u-mask {
+          position: absolute;
+          top: -7px;
+          left: -16px;
+          width: 100%;
+          height: 100%;
+          background: #303133;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+          opacity: 0.2;
+        }
+
+        .m-del {
+          position: absolute;
+          right: 47px;
+          bottom: -10px;
+          z-index: 11;
+          width: 82px;
+          height: 34px;
+          font-size: 14px;
+          line-height: 34px;
+          color: #303133;
+          text-align: center;
+          background: #fff;
+          border-radius: 6px;
+          box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+
+          &::after {
+            position: absolute;
+            top: -11px;
+            left: 10px;
+            display: inline-block;
+            content: '';
+            border: 6px solid #fff;
+            border-color: transparent transparent #fff transparent;
+          }
+        }
+      }
+
+      &.f-claim {
+        .m-title .u-title {
+          color: #0e9e00;
+        }
+      }
+
+      &.f-subscribe {
+        .m-title .u-title {
+          color: #c66400;
+        }
+      }
+
+      &.f-dispose {
+        .m-title .u-title {
+          color: #0088b7;
+        }
+      }
+
+      &.f-transfer {
+        .m-title .u-title {
+          color: #9200df;
+        }
+      }
+
+      &.f-not-read {
+        &::after {
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          content: '';
+          background: #ff1e3b;
+          border: 1px solid #fff;
+          border-radius: 50%;
+        }
+      }
+
+      .m-title {
+        position: relative;
+
+        .u-title {
+          display: inline-block;
+          height: 22px;
+          font-family: PingFangSC-Semibold, PingFang SC;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 24px;
+          color: #658fff;
+          vertical-align: middle;
+        }
+
+        .u-time {
+          float: right;
+          width: 150px;
+          height: 18px;
+          font-size: 14px;
+          line-height: 24px;
+          color: #9e9e9e;
+          text-align: right;
+        }
+      }
+
+      .u-id {
+        height: 22px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #303133;
+      }
+
+      .m-footer {
+        margin-top: 16px;
+        .u-icon {
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          vertical-align: middle;
+        }
+
+        .u-name {
+          display: inline-block;
+          margin-left: 4px;
+          font-size: 12px;
+          line-height: 20px;
+          color: #303133;
+          vertical-align: middle;
+        }
+      }
+
+      .u-btn {
+        position: absolute;
+        right: 14px;
+        bottom: 18px;
+        width: 92px;
+        height: 29px;
+        opacity: 0;
+        &.f-approve,
+        &.f-return,
+        &.f-reject,
+        &.f-ok,
+        &.f-wait,
+        &.f-done {
+          background-repeat: no-repeat;
+          background-size: 92px 29px;
+          opacity: 1;
+        }
+        &.f-approve {
+          background-image: url(https://szzw001.oss-cn-hangzhou.aliyuncs.com/assetControl/app/approve-tag.png);
+        }
+
+        &.f-return {
+          background-image: url(https://szzw001.oss-cn-hangzhou.aliyuncs.com/assetControl/app/return-tag.png);
+        }
+
+        &.f-reject {
+          background-image: url(https://szzw001.oss-cn-hangzhou.aliyuncs.com/assetControl/app/reject-tag.png);
+        }
+
+        &.f-ok {
+          background-image: url(https://szzw001.oss-cn-hangzhou.aliyuncs.com/assetControl/app/ok-tag.png);
+        }
+
+        &.f-wait {
+          bottom: 11px;
+          width: 92px;
+          height: 36px;
+          font-size: 14px;
+          line-height: 36px;
+          color: #fff;
+          text-align: center;
+          background: linear-gradient(45deg, #008aff 0%, #3667e8 100%);
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
